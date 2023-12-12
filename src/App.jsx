@@ -5,7 +5,7 @@
  import About from './components/About';
  import Contact from './components/Contact';
  import RestaurantList from './components/RestaurantList'; // Add this import
- import FavoriteRestaurants from './components/FavoriteRestaurants'; // Add this import
+ import FavoriteRestaurants from './components/FavoriteRestaurant'; // Add this import
  import reactLogo from './assets/react.svg';
  import viteLogo from '/vite.svg';
  import './App.css';
