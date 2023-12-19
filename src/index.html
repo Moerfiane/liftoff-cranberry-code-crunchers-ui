@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Randomizer</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<h1>Restaurant Randomizer</h1>
+<button id="randomizeButton">Randomize Restaurant</button>
+<p id="selectedRestaurant"></p>
+
+<script>
+    $(document).ready(function () {
+        $("#randomizeButton").click(function () {
+            var restaurants = ["Restaurant A", "Restaurant B", "Restaurant C", "Restaurant D"];
+
+            if (restaurants.length === 0) {
+                $("#selectedRestaurant").text("No restaurants available.");
+            } else {
+                var randomIndex = Math.floor(Math.random() * restaurants.length);
+                var randomRestaurant = restaurants[randomIndex];
+                $("#selectedRestaurant").text("Selected Restaurant: " + randomRestaurant);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
