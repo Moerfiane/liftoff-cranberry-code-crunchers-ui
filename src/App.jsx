@@ -62,6 +62,7 @@
              <RestaurantList restaurants={restaurantData} />
            </Route>
            <Route path="/favorites" component={FavoriteRestaurants} />
+           <Route path="/restaurants" render={() => <RestaurantList restaurants={restaurantData} />} />
          </Switch>
        </div>
      </BrowserRouter>
