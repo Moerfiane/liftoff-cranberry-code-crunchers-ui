@@ -69,5 +69,4 @@
 //    );
 //  }
 //
-//  export default App;
-//test
+ export default App;
