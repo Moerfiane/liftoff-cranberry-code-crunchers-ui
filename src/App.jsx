@@ -20,7 +20,4 @@
      // Add more dummy data as needed
    ];
 
-<<<<<<< showRestaurantsInUI
-=======
 export default App
->>>>>>> main
