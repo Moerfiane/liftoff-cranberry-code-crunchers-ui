@@ -4,10 +4,5 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  esbuild: {
-    jsxFactory: 'React.createElement',
-    jsxFragment: 'React.Fragment',
-    reactJsx: 'react',
-  },
+  // Remove the esbuild configuration or reactJsx option
 });
-
