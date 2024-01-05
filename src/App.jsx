@@ -20,4 +20,3 @@
      // Add more dummy data as needed
    ];
 
- export default App;
