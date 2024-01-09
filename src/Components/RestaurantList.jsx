@@ -6,9 +6,11 @@ const RestaurantList = ({ restaurants }) => {
     <div>
       <h2>Restaurant List</h2>
       <ul>
-        {restaurants.map(restaurant => (
+        {restaurants.map((restaurant) => (
           <li key={restaurant.id}>
-            {restaurant.name} - {restaurant.location.address1}
+            <strong>{restaurant.name}</strong> - {restaurant.location.address1}
+            <p>Category: {restaurant.categories.map((category) => category.title).join(', ')}</p>
+            {/* Add more details as needed */}
           </li>
         ))}
       </ul>

@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import './Components/About'
-import './Components/Contact'
-import './Components/FavoriteRestaurant'
-import './Components/Home'
-import './Components/Randomizer'
-import './Components/RestaurantCard'
-import './Components/RestaurantList'
+import React, { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
+// Import your components
+import About from './Components/About';
+import Contact from './Components/Contact';
+import FavoriteRestaurant from './Components/FavoriteRestaurant';
+import Home from './Components/Home';
+import Randomizer from './Components/Randomizer';
+import RestaurantCard from './Components/RestaurantCard';
+import RestaurantList from './Components/RestaurantList';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -25,6 +26,16 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+
+      {/* Use your components here */}
+      <About />
+      <Contact />
+      <FavoriteRestaurant />
+      <Home />
+      <Randomizer />
+      <RestaurantCard />
+      <RestaurantList />
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -37,7 +48,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
 export default App;
