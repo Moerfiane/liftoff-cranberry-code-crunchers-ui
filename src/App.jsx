@@ -2,7 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import './Components'
+import './Components/About'
+import './Components/Contact'
+import './Components/FavoriteRestaurant'
+import './Components/Home'
+import './Components/Randomizer'
+import './Components/RestaurantCard'
+import './Components/RestaurantList'
+
 
 function App() {
   const [count, setCount] = useState(0)
