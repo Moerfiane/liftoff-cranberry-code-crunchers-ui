@@ -3,15 +3,6 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-// Import your components
-import About from './Components/About';
-import Contact from './Components/Contact';
-import FavoriteRestaurant from './Components/FavoriteRestaurant';
-import Home from './Components/Home';
-import Randomizer from './Components/Randomizer';
-import RestaurantCard from './Components/RestaurantCard';
-import RestaurantList from './Components/RestaurantList';
-
 function App() {
   const [count, setCount] = useState(0);
 
